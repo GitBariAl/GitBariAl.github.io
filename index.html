@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
@@ -7,24 +7,36 @@
     <link href="styles.css" rel="stylesheet" />
   </head>
   <body>
-    <header>
-      <nav>
-        <ul>
-          <li><a href="index.html">Home</a></li>
-          <li><a href="about.html">About</a></li>
-          <li><a href="contact.html">Contact</a></li>
-        </ul>
-      </nav>
-    </header>
+    <header class="fixed left-0 top-0 w-full bg-base-100 shadow-lg mb-16 h-16 sm:mb-16 sm:h-16 md:mb-20 md:h-20 lg:mb-21 lg:h-21 xl:mb-21 xl:h-21">      
+      <input id="my-drawer" type="checkbox" class="drawer-toggle" />
+      <div class="drawer-content">
+        <!-- Page content here -->
+        <label for="my-drawer" class="btn btn-primary drawer-button my-4 mx-4">
+          <svg
+        xmlns="http://www.w3.org/2000/svg"
+        class="h-5 w-5"
+        fill="none"
+        viewBox="0 0 24 24"
+        stroke="currentColor">
+        <path
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          stroke-width="2"
+          d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6" />
+      </svg>
 
-    <div class="avatar">
-      <div class="w-24 rounded-full">
-        <img
-          src="https://img.daisyui.com/images/stock/photo-1534528741775-53994a69daeb.jpg"
-        />
+        </label>
       </div>
-    </div>
+      <div class="drawer-side">
+        <label for="my-drawer" aria-label="close sidebar" class="drawer-overlay"></label>
+        <ul class="menu min-h-full w-80 bg-base-200 p-4 text-base-content">
+          <!-- Sidebar content here -->
+          <li><a>Sidebar Item 1</a></li>
+          <li><a>Sidebar Item 2</a></li>
+        </ul>
+      </div>
+    </header >
     <h1>Hello world, this is GitBariAl!</h1>
-    <p>The site just went online, better come back for later upgrades</p>
+</div>    <p>The site just went online, better come back for later upgrades</p>
   </body>
 </html>
