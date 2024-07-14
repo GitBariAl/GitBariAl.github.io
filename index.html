@@ -8,7 +8,7 @@
   </head>
   <body>
     <header
-      class="lg:h-21 fixed left-0 top-0 h-16 w-full bg-base-300 shadow-lg md:h-20"
+      class="lg:h-21 fixed left-0 top-0 h-16 w-full bg-base-300 shadow-lg md:h-20 z-30"
     >
       <input id="my-drawer" type="checkbox" class="drawer-toggle" />
       <div class="drawer-content flex items-center justify-between">
@@ -36,7 +36,7 @@
               ALBERTO BARISON
             </p>
             <div
-              class="font-mono text-sm font-bold text-center tracking-widest"
+              class="text-center font-mono text-sm font-bold tracking-widest"
             >
               portfolio
             </div>
@@ -46,7 +46,12 @@
         <div class="table-header-group">
           <label class="swap swap-rotate">
             <!-- this hidden checkbox controls the state -->
-            <input type="checkbox" class="theme-controller" value="darkTheme" />
+            <input
+              id="theme-toggler"
+              type="checkbox"
+              class="theme-controller"
+              value="darkTheme"
+            />
 
             <!-- sun icon -->
             <svg
@@ -84,7 +89,11 @@
           <!-- Sidebar content here -->
           <div class="mt-2 font-mono text-base font-semibold">
             <li><a class="my-1 text-inherit hover:text-lg">Home page</a></li>
-            <li><a class="my-1 text-inherit hover:text-lg">Info</a></li>
+            <li>
+              <a class="my-1 text-inherit hover:text-lg" href="#footer_info"
+                >Info</a
+              >
+            </li>
           </div>
         </ul>
       </div>
@@ -93,23 +102,45 @@
       <!--  for creating space  -->
     </section>
     <section class="min-h-lvh">
-      <div>OK the page starts from here</div>
+      <!-- body page starts here -->
+      <div class="avatar-group -space-x-6">
+        <div class="avatar transition-transform duration-300 hover:scale-110">
+          <div class="w-36 rounded-full">
+            <img
+              src="https://github.com/GitBariAl.png"
+              alt="GitHub profile image"
+            />
+          </div>
+        </div>
+        <div
+          class="avatar transition-transform duration-300 hover:scale-110 bg-slate-800"
+        >
+          <div class="w-36">
+            <img
+              src="https://gitlab.com/uploads/-/system/user/avatar/21763527/avatar.png?width=192"
+              alt="GitLab profile image"
+            />
+          </div>
+        </div>
+        <!-- Aggiungi altre immagini qui -->
+      </div>
     </section>
 
-    <footer class="footer bg-base-200 text-base-content p-10">
+    <footer id="footer_info" class="footer bg-base-200 p-10 text-base-content">
       <nav>
         <h6 class="footer-title">Services</h6>
-        <a class="link link-hover">Sites</a>
-        <a class="link link-hover">Design</a>
-        <a class="link link-hover">Marketing</a>
-        <a class="link link-hover">Advertisement</a>
+        <a class="link-hover link">Sites</a>
+        <a class="link-hover link">Design</a>
       </nav>
 
       <nav>
         <h6 class="footer-title">Social</h6>
-        <a class="link link-hover">GitHub</a>
-        <a class="link link-hover">GitLab</a>
-        <a class="link link-hover">Cookie policy</a>
+        <a class="link-hover link" href="https://github.com/GitBariAl"
+          >GitHub</a
+        >
+        <a class="link-hover link" href="https://gitlab.com/abarison02"
+          >GitLab</a
+        >
       </nav>
       <form>
         <h6 class="footer-title">Collab</h6>
@@ -119,7 +150,7 @@
           </label>
           <div class="join">
             <div class="tooltip" data-tip="tap to copy">
-              <div class="link link-hover" id="copyText">
+              <div class="link-hover link" id="copyText">
                 abarison02@gmail.com
               </div>
             </div>
@@ -129,12 +160,26 @@
     </footer>
 
     <script>
+      //copy to clipboard mechanism
       document
         .getElementById("copyText")
         .addEventListener("click", function () {
           const emailText = this.innerText;
           navigator.clipboard.writeText(emailText);
         });
+
+      //drawer mechanism
+      document
+        .querySelector('a[href="#footer_info"]')
+        .addEventListener("click", function () {
+          // Seleziona l'input checkbox che controlla il drawer
+          const drawerCheckbox = document.getElementById("my-drawer");
+          // Imposta il suo stato su false per chiudere il drawer
+          drawerCheckbox.checked = false;
+        });
+
+      //theme saving mechanism
+
     </script>
   </body>
 </html>
