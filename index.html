@@ -277,15 +277,18 @@
       });
 
       function addTitleToMockup(title) {
-        const codeBlock = document.createElement('pre');
-        codeBlock.dataset.prefix = ">";
-        codeBlock.innerHTML = `<code class="text-success">${title} installed</code>`;
-        mockupCode.appendChild(codeBlock);
+        setTimeout(() => {
+          const codeBlock = document.createElement('pre');
+          codeBlock.dataset.prefix = ">";
+          codeBlock.innerHTML = `<code class="text-success">${title} installed</code>`;
+          mockupCode.appendChild(codeBlock);
+          // Rimuovi la prima riga se ci sono più di 2 righe
+          if (mockupCode.children.length > 4) {
+            mockupCode.removeChild(mockupCode.children[0]);
+          }
+        }, 100)
 
-        // Rimuovi la prima riga se ci sono più di 2 righe
-        if (mockupCode.children.length > 4) {
-          mockupCode.removeChild(mockupCode.children[0]);
-        }
+
       }
     });
   </script>
