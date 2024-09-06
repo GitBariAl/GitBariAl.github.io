@@ -2,13 +2,15 @@
 
 <html lang="en">
 
+</html>
+
 <head>
   <meta charset="UTF-8" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
   <title>Alberto Barison's portfolio</title>
-
+  <script src="/js/index.js"></script> <!-- Include index.js file -->
   <link href="/dist/styles.css" rel="stylesheet" />
 </head>
 
@@ -39,6 +41,7 @@
       <!-- Spazio vuoto per mantenere il layout -->
 
       <div class="table-header-group">
+    
         <label class="swap swap-rotate">
           <!-- this hidden checkbox controls the state -->
 
@@ -66,10 +69,8 @@
 
       <ul class="menu min-h-full w-80 bg-base-200 p-4 pt-10 text-base-content">
         <!-- Sidebar content here -->
-
         <div class="mt-2 font-mono text-base font-semibold">
           <li><a class="my-1 text-inherit hover:text-lg">Home page</a></li>
-
           <li>
             <a class="my-1 text-inherit hover:text-lg" href="#footer_info">Info</a>
           </li>
@@ -82,7 +83,8 @@
     <!-- for creating space -->
   </section>
 
-  <section class="min-h-lvh mb-20">
+  <!-- about me -->
+  <section class="min-h-full mb-20">
     <!-- body page starts here -->
     <section class="p-5 min-h-fit md:h-96" id="about-me">
       <div class="flex items-center justify-center">
@@ -91,101 +93,23 @@
       <div class="max-w-7xl mx-auto">
         <div class="flex flex-col items-center gap-4 md:flex-row">
           <div class="md:w-2/3 font-serif">
-            <p class="text-lg text-inherit">👋 Hi! My name is Alberto and I'm a programmer commited to creating whatever I
+            <p class="text-lg text-inherit">Hi! My name is Alberto and I'm a programmer commited to creating whatever I
               can with a computer.</p>
             <p class="text-lg text-inherit">Through the years at school, university and elsewhere, I've made my way with
-              different kind of programming languages. However, I've recently decided to stick around in the world of web and app
+              different kind of programming languages. However, I've recently decided to stick around in the world of web
               development and I'll be glad to help you if you ever need some.</p>
           </div>
           <div class="md:w-1/3">
             <img src="/images/Profile.png" alt="Immagine profilo"
-              class="h-auto w-full rounded-lg shadow-lg object-cover md:h-64 lg:h-80 md:w-64" />
+              class="h-auto w-full rounded-lg shadow-lg object-cover sm:h-64 md:h-80 md:w-64" />
           </div>
         </div>
       </div>
     </section>
-
+    <!-- what i work with -->
     <section class="p-5 min-h-fit" id="what-i-work-with">
-      <div class="flex items-center justify-center">
-        <h2 class="mb-4 text-2xl font-bold">What I work with</h2>
-      </div>
-      <div id="mockup-code" class="mockup-code max-w-7xl mx-auto top-24 sticky z-20 p-4 bg-slate-600">
-        <pre data-prefix="$"><code class="text-info"></code></pre>
-        <pre data-prefix="$"><code class="text-info"></code></pre>
-        <pre data-prefix="$"><code class="text-info"></code></pre>
-        <pre data-prefix="$"><code class="text-info">npm i experience</code></pre>
-      </div>
-      <div class="max-w-7xl mx-auto p-5 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 mb-60">
-        <!-- Esempio di Card 1 -->
-        <div class="card w-full bg-base-100 shadow-xl">
-          <figure class="w-full h-48  bg-white"><img src="/images/Languages.png" alt="Immagine 1"
-              class="w-full h-full object-scale-down"></figure>
-          <div class="card-body">
-            <h2 class="card-title">C/C++/Java</h2>
-            <p>Data structures and algorythms</p>
-          </div>
-        </div>
 
-        <!-- Esempio di Card 2 -->
-        <div class="card w-full bg-base-100 shadow-xl">
-          <figure class="w-full h-48 bg-white"><img src="/images/SQL.png" alt="Immagine 2"
-              class="w-full h-full object-scale-down"></figure>
-          <div class="card-body">
-            <h2 class="card-title">SQL</h2>
-            <p>Major relational databases like MySQL and Postgre</p>
-          </div>
-        </div>
 
-        <!-- Aggiungi altre card qui seguendo lo stesso schema -->
-        <div class="card w-full bg-base-100 shadow-xl">
-          <figure class="w-full h-48  bg-white"><img src="/images/WebLanguages.png" alt="Immagine 2"
-              class="w-full h-full object-scale-down"></figure>
-          <div class="card-body">
-            <h2 class="card-title">HTML/CSS/JS</h2>
-            <p>Major languages for front-end development</p>
-          </div>
-        </div>
-        <div class="card w-full bg-base-100 shadow-xl">
-          <figure class="w-full h-48  bg-white"><img src="/images/NodeJS.png" alt="Immagine 2"
-              class="w-full h-full object-scale-down"></figure>
-          <div class="card-body">
-            <h2 class="card-title">NodeJS</h2>
-            <p>Favourite back-end environment</p>
-          </div>
-        </div>
-        <div class="card w-full bg-base-100 shadow-xl">
-          <figure class="w-full h-48  bg-white"><img src="/images/FrameworkAndLib.png" alt="Immagine 2"
-              class="w-full h-full object-scale-down"></figure>
-          <div class="card-body">
-            <h2 class="card-title">Tailwind + DaisyUI</h2>
-            <p>Cushy framework and library for front-end</p>
-          </div>
-        </div>
-        <div class="card w-full bg-base-100 shadow-xl">
-          <figure class="w-full h-48  bg-white"><img src="/images/FlutterAndDart.png" alt="Immagine 2"
-              class="w-full h-full object-scale-down"></figure>
-          <div class="card-body">
-            <h2 class="card-title">Dart + Flutter</h2>
-            <p>Cross platform framework and programming language for mobile app</p>
-          </div>
-        </div>
-        <div class="card w-full bg-base-100 shadow-xl">
-          <figure class="w-full h-48  bg-white"><img src="/images/Redis.png" alt="Immagine 2"
-              class="w-full h-full object-scale-down"></figure>
-          <div class="card-body">
-            <h2 class="card-title">Redis</h2>
-            <p>Useful tool currently under testing</p>
-          </div>
-        </div>
-        <div class="card w-full bg-base-100 shadow-xl">
-          <figure class="w-full h-48  bg-white"><img src="/images/Cloudfare.png" alt="Immagine 2"
-              class="w-full h-full object-scale-down"></figure>
-          <div class="card-body">
-            <h2 class="card-title">Cloudfare</h2>
-            <p>Perfect CDN and domain provider... and much more!</p>
-          </div>
-        </div>
-      </div>
     </section>
 
     <section class="h-80"></section>
@@ -193,24 +117,12 @@
     <section class="h-80"></section>
 
 
-    <div class="avatar-group -space-x-6">
-      <div class="avatar transition-transform duration-300 hover:scale-110">
-        <div class="w-36 rounded-full">
-          <img src="https://github.com/GitBariAl.png" alt="GitHub profile image" />
-        </div>
-      </div>
 
-      <div class="avatar bg-slate-800 transition-transform duration-300 hover:scale-110">
-        <div class="w-36">
-          <img src="https://gitlab.com/uploads/-/system/user/avatar/21763527/avatar.png?width=192"
-            alt="GitLab profile image" />
-        </div>
-      </div>
 
-      <!-- Aggiungi altre immagini qui -->
-    </div>
   </section>
 
+
+  <!-- footer -->
   <footer id="footer_info" class="footer bg-base-200 p-10 text-base-content">
     <nav>
       <h6 class="footer-title">Services</h6>
@@ -231,71 +143,7 @@
     </nav>
   </footer>
 
-  <script>
-    //drawer mechanism
 
-    document
-
-      .querySelector('a[href="#footer_info"]')
-
-      .addEventListener("click", function () {
-        // Seleziona l'input checkbox che controlla il drawer
-
-        const drawerCheckbox = document.getElementById("my-drawer");
-
-        // Imposta il suo stato su false per chiudere il drawer
-
-        drawerCheckbox.checked = false;
-      });
-
-    //mockup code mechanism
-
-    document.addEventListener('DOMContentLoaded', () => {
-      const mockupCode = document.getElementById('mockup-code');
-      const cards = document.querySelectorAll('.card');
-      let titlesAdded = [];
-      const grid = document.getElementById('what-i-work-with');
-      window.addEventListener('scroll', () => {
-        const mockupBottom = mockupCode.getBoundingClientRect().bottom;
-        const gridBottom = grid.getBoundingClientRect().bottom;
-        // Check if the mockup code bottom is greater than or equal to the grid bottom
-        if (mockupBottom >= gridBottom) {
-          mockupCode.style.position = 'absolute'; // Change position to absolute to stop it from being sticky
-          mockupCode.style.bottom = '0'; // Align it to the bottom of the grid
-        } else {
-          mockupCode.style.position = 'sticky'; // Make it sticky again when scrolling back up
-        }
-
-
-        cards.forEach((card, index) => {
-          const cardTop = card.querySelector('.card-body').getBoundingClientRect().top;
-          const mockupBottom = mockupCode.getBoundingClientRect().bottom;
-
-          if (cardTop < mockupBottom && !titlesAdded.includes(index)) {
-            const title = card.querySelector('h2').textContent;
-            addTitleToMockup(title);
-            titlesAdded.push(index);
-          }
-        });
-
-      });
-
-      function addTitleToMockup(title) {
-        setTimeout(() => {
-          const codeBlock = document.createElement('pre');
-          codeBlock.dataset.prefix = ">";
-          codeBlock.innerHTML = `<code class="text-success">${title} installed</code>`;
-          mockupCode.appendChild(codeBlock);
-          // Rimuovi la prima riga se ci sono più di 2 righe
-          if (mockupCode.children.length > 4) {
-            mockupCode.removeChild(mockupCode.children[0]);
-          }
-        }, 100)
-
-
-      }
-    });
-  </script>
 </body>
 
 </html>
