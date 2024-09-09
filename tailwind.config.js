@@ -2,8 +2,11 @@ module.exports = {
   content: ['*.{html,js}'],
   theme: {
     extend: {
+      scale: {
+        '70': '0.7', // Definisci una scala personalizzata
+      },
       animation: {
-        'spin-slow': 'spin 10s linear infinite',
+        'transition': 'transform 0.5s ease-in-out'
       },
     },
   },
