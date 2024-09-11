@@ -10,6 +10,8 @@
   <title>Alberto Barison's portfolio</title>
   <script src="/js/index.js"></script> <!-- Include index.js file -->
   <link href="/dist/styles.css" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
 </head>
 
 <body>
@@ -91,7 +93,8 @@
       <div class="max-w-7xl mx-auto">
         <div class="flex flex-col items-center gap-4 md:flex-row">
           <div class="md:w-2/3 font-serif">
-            <p class="text-lg text-inherit">Hi!👋 My name is Alberto and I'm a programmer commited to creating whatever I
+            <p class="text-lg text-inherit">Hi!👋 My name is Alberto and I'm a programmer commited to creating whatever
+              I
               can with a computer.</p>
             <p class="text-lg text-inherit">Through the years at school, university and elsewhere, I've made my way with
               different kind of programming languages. However, I've recently decided to stick around in the world of
@@ -105,103 +108,154 @@
         </div>
       </div>
     </section>
+
+
     <!-- what i work with -->
+
     <section class="p-5 min-h-fit" id="what-i-work-with">
       <div class="flex items-center justify-center pb-12 pt-12">
         <h2 class="mb-4 text-2xl font-bold">What I work with</h2>
       </div>
       <div class="container max-w-7xl mx-auto">
-
-        <div class="grid row-auto grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
-          <div class="relative grid-item bg-gray-500 border-gray-300 rounded-md shadow-md">
-            <div class="bottom-0 left-0 right-0 p-4 grid grid-cols-1 gap-4">
-              <div
-                class="hero bottom-0 opacity-0 translate-y-4 bg-base-200 rounded-md shadow-md transition-all duration-700 ease-in-out">
-                <div class="hero-content text-center">
-                  <div class="max-w-md">
-                    <h1 class="text-5xl font-bold">Hello there</h1>
-                    <p class="py-2">Welcome to this cool hero section.</p>
-                    <p class="py-2">Welcome to this cool hero section.</p>
-                    <p class="py-2">Welcome to this cool hero section.</p>
-                  </div>
+        <div class="grid row-auto grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+          <!-- hero card -->
+          <div class="relative grid-item border-gray-300 rounded-md p-4">
+            <div class="bottom-0 left-0 right-0 grid grid-cols-1 gap-4">
+              <div class="hero bottom-0 opacity-0 translate-y-4 rounded-md transition-all duration-700 ease-in-out">
+                <div class="hero-content items-center-center">
+                  <img src="/images/Languages2.png" alt="Languages"
+                    class="h-40 w-full max-w-xs mx-auto object-contain" />
                 </div>
               </div>
             </div>
-            <!-- Elemento animato principale -->
             <div
               class="animatedElement absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 transition-all duration-500 ease-in-out">
-              <div class="text-sm p-6 bg-blue-500 text-white rounded-md shadow-lg text-center">
-                Starting from the beauty of simplicty
+              <div id="animEl-text"
+                class="p-6 text-2xl font-semibold text-center whitespace-nowrap overflow-hidden text-ellipsis">
+                From the beauty of simplicity
               </div>
-            </div>
-          </div>
-          <div class="relative grid-item bg-gray-500 border-gray-300 rounded-md shadow-md">
-            <div class="bottom-0 left-0 right-0 p-4 grid grid-cols-1 gap-4">
-              <div
-                class="hero bottom-0 opacity-0 translate-y-4 bg-base-200 rounded-md shadow-md transition-all duration-700 ease-in-out">
-                <div class="hero-content text-center">
-                  <div class="max-w-md">
-                    <h1 class="text-5xl font-bold">Hello there</h1>
-                    <p class="py-2">Welcome to this cool hero section.</p>
-                    <p class="py-2">Welcome to this cool hero section.</p>
-                    <p class="py-2">Welcome to this cool hero section.</p>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <!-- Elemento animato principale -->
-            <div
-              class="animatedElement absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 transition-all duration-500 ease-in-out">
-              <div class="text-sm p-6 bg-blue-500 text-white rounded-md shadow-lg text-center">
-                Starting from the beauty of simplicty
-              </div>
-            </div>
-          </div>
-          <div class="relative grid-item bg-gray-500 border-gray-300 rounded-md shadow-md">
-            <div class="bottom-0 left-0 right-0 p-4 grid grid-cols-1 gap-4">
-              <div
-                class="hero bottom-0 opacity-0 translate-y-4 bg-base-200 rounded-md shadow-md transition-all duration-700 ease-in-out">
-                <div class="hero-content text-center">
-                  <div class="max-w-md">
-                    <h1 class="text-5xl font-bold">Hello there</h1>
-                    <p class="py-2">Welcome to this cool hero section.</p>
-                    <p class="py-2">Welcome to this cool hero section.</p>
-                    <p class="py-2">Welcome to this cool hero section.</p>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <!-- Elemento animato principale -->
-            <div
-              class="animatedElement absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 transition-all duration-500 ease-in-out">
-              <div class="text-sm p-6 bg-blue-500 text-white rounded-md shadow-lg text-center">
-                Starting from the beauty of simplicty
+              <div class="animEl-icon flex justify-center text-5xl no-scale">
+                <i class="bi bi-cpu"></i>
               </div>
             </div>
           </div>
 
-          <div class="relative grid-item bg-gray-500 border-gray-300 rounded-md shadow-md">
-            <div class="bottom-0 left-0 right-0 p-4 grid grid-cols-1 gap-4">
-              <div
-                class="hero bottom-0 opacity-0 translate-y-4 bg-base-200 rounded-md shadow-md transition-all duration-700 ease-in-out">
-                <div class="hero-content text-center">
-                  <div class="max-w-md">
-                    <h1 class="text-5xl font-bold">Hello there</h1>
-                    <p class="py-2">Welcome to this cool hero section.</p>
-                    <p class="py-2">Welcome to this cool hero section.</p>
-                    <p class="py-2">Welcome to this cool hero section.</p>
-                  </div>
+          <!-- hero card -->
+          <div class="relative grid-item border-gray-300 rounded-md p-4">
+            <div class="bottom-0 left-0 right-0 grid grid-cols-1 gap-4">
+              <div class="hero bottom-0 opacity-0 translate-y-4 rounded-md transition-all duration-700 ease-in-out">
+                <div class="hero-content items-center-center">
+                  <img src="/images/HighLL.png" alt="Languages" class="h-40 w-full max-w-xs mx-auto object-contain" />
                 </div>
               </div>
             </div>
-            <!-- Elemento animato principale -->
             <div
               class="animatedElement absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 transition-all duration-500 ease-in-out">
-              <div class="text-sm p-6 bg-blue-500 text-white rounded-md shadow-lg text-center">
-                Starting from the beauty of simplicty
+              <div id="animEl-text"
+                class="p-6 text-2xl font-semibold text-center whitespace-nowrap overflow-hidden text-ellipsis">
+                Through something challenging
+              </div>
+              <div class="animEl-icon flex justify-center text-5xl no-scale">
+                <i class="bi bi-braces"></i>
               </div>
             </div>
           </div>
+
+          <!-- hero card -->
+          <div class="relative grid-item border-gray-300 rounded-md p-4">
+            <div class="bottom-0 left-0 right-0 grid grid-cols-1 gap-4">
+              <div class="hero bottom-0 opacity-0 translate-y-4 rounded-md transition-all duration-700 ease-in-out">
+                <div class="hero-content items-center-center">
+                  <img src="/images/Database.png" alt="Languages" class="h-40 w-full max-w-xs mx-auto object-contain" />
+                </div>
+              </div>
+            </div>
+            <div
+              class="animatedElement absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 transition-all duration-500 ease-in-out">
+              <div id="animEl-text"
+                class="p-6 text-2xl font-semibold text-center whitespace-nowrap overflow-hidden text-ellipsis">
+                Through the importance of data
+              </div>
+              <div class="animEl-icon flex justify-center text-5xl no-scale">
+                <i class="bi bi-database"></i>
+              </div>
+            </div>
+          </div>
+
+          <!-- hero card -->
+          <div class="relative grid-item border-gray-300 rounded-md p-4">
+            <div class="bottom-0 left-0 right-0 flex flex-wrap gap-4">
+              <div
+                class="hero bottom-0 opacity-0 translate-y-4 rounded-md transition-all duration-700 ease-in-out flex-1 min-w-14 max-w-full">
+                <div class="hero-content items-center flex flex-col gap-4">
+                  <p class="text-md text-inherit">Front-end</p>
+                  <img src="/images/FrameworkAndLib.png" alt="Languages"
+                    class="h-40 w-full max-w-xs mx-auto object-contain" />
+                </div>
+              </div>
+              <div
+                class="hero bottom-0 opacity-0 translate-y-4 rounded-md transition-all duration-700 ease-in-out flex-1 min-w-14 max-w-full">
+                <div class="hero-content items-center flex flex-col gap-4">
+                  <p class="text-md text-inherit">Back-end</p>
+                  <img src="/images/NodeJS.png" alt="Languages" class="h-40 w-full max-w-xs mx-auto object-contain" />
+                </div>
+              </div>
+            </div>
+            <div
+              class="animatedElement absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 transition-all duration-500 ease-in-out">
+              <div id="animEl-text"
+                class="p-6 text-2xl font-semibold text-center whitespace-nowrap overflow-hidden text-ellipsis">
+                Through the web
+              </div>
+              <div class="animEl-icon flex justify-center text-5xl no-scale">
+                <i class="bi bi-diagram-3"></i>
+              </div>
+            </div>
+          </div>
+
+          <!-- hero card -->
+          <div class="relative grid-item border-gray-300 rounded-md p-4">
+            <div class="bottom-0 left-0 right-0 grid grid-cols-1 gap-4">
+              <div class="hero bottom-0 opacity-0 translate-y-4 rounded-md transition-all duration-700 ease-in-out">
+                <div class="hero-content items-center-center">
+                  <img src="/images/Cloudfare.png" alt="Languages" class="h-40 w-full max-w-xs mx-auto object-contain" />
+                </div>
+              </div>
+            </div>
+            <div
+              class="animatedElement absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 transition-all duration-500 ease-in-out">
+              <div id="animEl-text"
+                class="p-6 text-2xl font-semibold text-center whitespace-nowrap overflow-hidden text-ellipsis">
+                Passing by the cloud...
+              </div>
+              <div class="animEl-icon flex justify-center text-5xl no-scale">
+                <i class="bi bi-globe-europe-africa"></i>
+              </div>
+            </div>
+          </div>
+
+          <!-- hero card -->
+          <div class="relative grid-item border-gray-300 rounded-md p-4">
+            <div class="bottom-0 left-0 right-0 grid grid-cols-1 gap-4">
+              <div class="hero bottom-0 opacity-0 translate-y-4 rounded-md transition-all duration-700 ease-in-out">
+                <div class="hero-content items-center-center">
+                  <img src="/images/FlutterAndDart.png" alt="Languages" class="h-40 w-full max-w-xs mx-auto object-contain" />
+                </div>
+              </div>
+            </div>
+            <div
+              class="animatedElement absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 transition-all duration-500 ease-in-out">
+              <div id="animEl-text"
+                class="p-6 text-2xl font-semibold text-center whitespace-nowrap overflow-hidden text-ellipsis">
+                ... To your phone!
+              </div>
+              <div class="animEl-icon flex justify-center text-5xl no-scale">
+                <i class="bi bi-body-text"></i>
+              </div>
+            </div>
+          </div>
+
+
         </div>
       </div>
     </section>

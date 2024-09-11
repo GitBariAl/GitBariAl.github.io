@@ -5,8 +5,9 @@ module.exports = {
       scale: {
         '70': '0.7', // Definisci una scala personalizzata
       },
-      animation: {
-        'transition': 'transform 0.5s ease-in-out'
+      transform: {
+        'none': 'none',
+        'scale-70': 'scale(0.7)',
       },
     },
   },
